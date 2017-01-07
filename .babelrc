@@ -1,0 +1,22 @@
+{
+  "env": {
+    "production": {
+      "presets": ["latest"]
+    },
+    "development": {
+      "presets": [
+        ["env", {
+          "targets": {
+            "node": "current"
+          }
+        }]
+      ]
+    }
+  },
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-es2015-spread",
+    "transform-regenerator"
+  ]
+}
